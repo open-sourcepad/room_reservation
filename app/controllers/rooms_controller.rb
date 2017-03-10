@@ -8,7 +8,7 @@ class RoomsController < ApplicationController
   end
 
   def obj
-    collection.find_by(tag: params[:id])
+    collection.find_by!(tag: params[:id])
   end
 
   def collection
