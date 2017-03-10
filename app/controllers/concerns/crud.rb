@@ -14,7 +14,7 @@ module CRUD
 
   def show
     if stale?(obj, public: true)
-      render json: obj, serializer: serializer
+      render json: obj, serializer: serializer, scope: {params: params}
     end
   end
 
