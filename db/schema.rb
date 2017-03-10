@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170310080524) do
+ActiveRecord::Schema.define(version: 20170310081733) do
 
   create_table "rooms", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "tag",        limit: 255
   end
 
   create_table "schedules", force: :cascade do |t|
