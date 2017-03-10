@@ -14,17 +14,17 @@
 ActiveRecord::Schema.define(version: 20170310080524) do
 
   create_table "rooms", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "schedules", force: :cascade do |t|
-    t.string   "event"
+    t.string   "event",       limit: 255
     t.datetime "start_date"
     t.datetime "end_date"
-    t.string   "description"
-    t.string   "creator"
+    t.string   "description", limit: 255
+    t.string   "creator",     limit: 255
   end
 
 end
