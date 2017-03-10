@@ -3,6 +3,7 @@ class RoomSerializer < ActiveModel::Serializer
 
   def schedule_for_day
     date = scope[:params][:start_date].to_date
-    object.schedules.where('start_date BETWEEN ? AND ?', date.beginning_of_day, date.end_of_day)
+    # object.schedules.where('start_date BETWEEN ? AND ?', date.beginning_of_day, date.end_of_day)
+    object.schedules
   end
 end
