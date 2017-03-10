@@ -24,6 +24,13 @@ gem 'active_model_serializers'
 
 gem 'mysql2'
 
+group :development do
+  gem 'capistrano', '~> 3.7'
+  gem 'capistrano-rails', '~> 1.1.7'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
