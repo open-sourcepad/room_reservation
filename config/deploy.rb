@@ -11,5 +11,5 @@ set :stage,     :production
 
 set :keep_releases, 1
 
-set :linked_files, %w{config/database.yml config/application.yml}
+set :linked_files, %w{config/database.yml}
 set :linked_dirs,  %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
