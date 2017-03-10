@@ -21,8 +21,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 gem 'active_model_serializers'
-
-gem 'mysql2'
+gem 'pg'
 
 group :development do
   gem 'capistrano', '~> 3.7'
